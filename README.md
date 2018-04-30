@@ -106,7 +106,7 @@ namespace ClassicalMachineTranslation
 The sample codes below show how to train and do language translation using IBM model 2:
 
 ```bash 
-using System;
+uusing System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -116,7 +116,7 @@ namespace ClassicalMachineTranslation
     {
         public void RunSimpleTraining()
         {
-            IBMModel1 model = new IBMModel1();
+            IBMModel2 model = new IBMModel2();
 
             List<SimpleTrainingRecord> training_corpus = new List<SimpleTrainingRecord>();
 
@@ -155,7 +155,7 @@ namespace ClassicalMachineTranslation
         
         public void RunEMTraining()
         {
-            IBMModel1 model = new IBMModel1();
+            IBMModel2 model = new IBMModel2();
 
             List<EMTrainingRecord> training_corpus = new List<EMTrainingRecord>();
 
@@ -194,4 +194,5 @@ namespace ClassicalMachineTranslation
         }
     }
 }
+
 ```
